@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-  <ul>
+  <ul class="flex-col text-center md:flex-row">
     <li class:active={$page.route.id === "/"}>
       <a class="test" href="/">Home</a>
     </li>

@@ -1,62 +1,44 @@
 <script>
   import pms from "$lib/images/pms.png";
   import rawasui from "$lib/images/rawasui.png";
+  import pokedex from "$lib/images/pokedex.png";
+  import Cards from "./cards.svelte";
 </script>
 
-<h2 class="work">
-  <span class="top-title"><span class="holder">My Work.</span></span>
-</h2>
-<div class="grid grid-cols-1 gap-8 mt-10 md:grid-cols-8">
-  <div class="col-span-4">
-    <a
-      href="https://github.com/rawasaditya/RawasUI"
-      target="_blank"
-      class="border mockup-browser card green"
-    >
-      <div class="mockup-browser-toolbar">
-        <div class="border input border-base-300">RawasUI</div>
-      </div>
-      <img src={rawasui} />
-    </a>
-  </div>
-  <div class="col-span-4">
-    <a
-      c
-      href="https://github.com/rawasaditya/projectManagement"
-      target="_blank"
-      class="border mockup-browser card purple"
-    >
-      <div class="mockup-browser-toolbar">
-        <div class="border input border-base-300">
-          Project Management System
-        </div>
-      </div>
-      <img src={pms} />
-    </a>
+<div>
+  <h2 class="work">
+    <span class="top-title"><span class="holder">My Work.</span></span>
+  </h2>
+  <div class="grid grid-cols-1 gap-8 mt-10 md:grid-cols-8">
+    <div class="col-span-4">
+      <Cards
+        src={rawasui}
+        href={"https://github.com/rawasaditya/RawasUI"}
+        className="green"
+        title="RawasUI"
+      />
+    </div>
+    <div class="col-span-4">
+      <Cards
+        src={pms}
+        href={"https://github.com/rawasaditya/projectManagement"}
+        className="purple"
+        title="Project Management System"
+      />
+    </div>
+    <div class="col-span-4">
+      <Cards
+        src={pokedex}
+        href={"https://poke-dex-fawn.vercel.app/"}
+        className="orange"
+        title="Poke Dex"
+      />
+    </div>
   </div>
 </div>
 
 <style>
   .work {
     @apply mt-32  text-[#8FDCC2] text-4xl font-bold;
-  }
-
-  .card {
-    @apply rounded-3xl  text-[#364442]  cursor-pointer;
-  }
-  .purple {
-    background-color: hsla(284, 61%, 74%, 1);
-  }
-  .green {
-    background-color: hsla(172, 45%, 75%, 1);
-  }
-
-  img {
-    transition: 300ms all ease-in-out;
-  }
-
-  .card:hover img {
-    scale: 0.9;
-    @apply rounded-3xl;
   }
 </style>
