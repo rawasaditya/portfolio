@@ -21,7 +21,7 @@
 
 <style>
   nav {
-    @apply my-10;
+    @apply py-10;
   }
   nav ul {
     @apply flex w-full justify-center gap-10;

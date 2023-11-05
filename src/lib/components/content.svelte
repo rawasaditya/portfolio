@@ -11,8 +11,7 @@
 
 <style>
   h1 {
-    @apply pt-14 pb-12 flex justify-center text-center;
-    font-size: 5rem;
+    @apply pt-14 pb-12 flex justify-center text-center text-9xl;
     font-weight: 800;
   }
   span {
@@ -22,6 +21,6 @@
   .subTitle {
     color: #d4ede4;
     font-size: clamp(1rem, 0.8852rem + 0.4898vw, 1.375rem);
-    @apply text-center;
+    @apply text-center mx-10;
   }
 </style>
