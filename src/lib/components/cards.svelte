@@ -7,7 +7,7 @@
 
 <a {href} target="_blank" class={`mockup-browser card ${className}`}>
   <div class="mockup-browser-toolbar">
-    <div class="border input border-base-300">{title}</div>
+    <div class="text-center bg-white border input border-base-300">{title}</div>
   </div>
   <img {src} />
 </a>
